@@ -1,0 +1,260 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+
+}
+
+header {
+    position: relative;
+}
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 0px;
+    border-radius: 0 0 5px 5px;
+    z-index: 2;
+    width: 220px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 50px 0px;
+    left: 160px;
+}
+
+/* img */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+/* header-top*/
+.nav-item {
+    position: relative;
+    font-size: 10px;
+}
+
+.nav-link {
+    color: #212121;
+}
+
+.nav-item::after {
+    content: "|";
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+/* header-bot */
+.nav-item1 {
+    position: relative;
+    padding-right: 10px;
+}
+
+#header-bot {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.nav-link1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main */
+/* banner */
+#banner {
+    background-image: url(./pic/bg1.jpg);
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Xe */
+#sect_xe {
+    position: relative;
+}
+
+/* breadcum-menu */
+
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    font: 14px Arial, sans-serif !important;
+    padding: 10px !important;
+    background-color: white !important;
+}
+
+.breadcrumb li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.breadcrumb li+li:before {
+    content: ">";
+    padding: 0 5px;
+    color: red;
+}
+
+.breadcrumb a {
+    color: red;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+
+/* hr */
+hr {
+    margin: 0;
+}
+
+/* Content */
+/* Left-Content */
+.content__Pic1 {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: -17px;
+}
+
+/* Right-Content */
+
+.vision {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* dropdown menu */
+#accordion {
+    background-color: #f1f1f1;
+    padding: 20px 20px 10px;
+    border: none;
+}
+
+.content__Body__Dropdown {
+    transition: 1s ease;
+}
+
+.card-header {
+    font-size: 15px;
+    background-color: #c00 !important;
+}
+
+.btn-link {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* title */
+.row-title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.thuvien-img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+}
+
+/* Thong so ki thuat */
+.tskt-content {
+    padding-left: 10%;
+    text-align: left;
+    background-color: #f3f3f3;
+    margin-top: -10px;
+    padding-top: 5%;
+    font-size: 14px;
+}
+
+.tskt-item {
+    background-color: white;
+}
+
+.value {
+    font-weight: bold;
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1025px) {}
+
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    .thuvien-img {
+        vertical-align: middle;
+        border-style: none;
+        width: 50%;
+    }
+
+    .container{
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 739px) {}
